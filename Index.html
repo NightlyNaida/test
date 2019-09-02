@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="showScroll"></div>
+    <div class="slide_controller">
+        <ul>
+            <li>
+                <svg class="marker" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle_marker" id="first_mr" cx="7" cy="7" r="7" />
+                </svg>
+            </li>
+            <li>
+                <svg class="marker" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle_marker" cx="7" cy="7" r="7"  />
+                </svg>
+            </li>
+            <li>
+                <svg class="marker" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle_marker" cx="7" cy="7" r="7"/>
+                </svg>
+            </li>
+        </ul>
+    </div>
+    <div id="screens">
+    <div class="screen" id="screen1">
+       <div class="ellipses">
+           <div class="ellipse ellipse-1">
+                <div class="imgEllipse">
+                <svg class="svgCircleContainer" xmlns="http://www.w3.org/2000/svg"/>
+                </div>
+               <p>Цель по HbA1c</p>
+           </div>
+            <div class="ellipse ellipse-2">
+                <p>Гипоклемия</p>   
+                <div class="imgEllipse">
+                <svg class="svgCircleContainer" xmlns="http://www.w3.org/2000/svg"/>
+                </div> 
+            </div>
+            <div class="ellipse ellipse-3">
+                <p>Осложнения СД</p>   
+                <div class="imgEllipse">
+                <svg class="svgCircleContainer" xmlns="http://www.w3.org/2000/svg"/>
+                </div>  
+            </div>
+            <div class="ellipse ellipse-4">
+                <p>СС риски</p>   
+                <div class="imgEllipse">
+                <svg class="svgCircleContainer" xmlns="http://www.w3.org/2000/svg"/>
+                </div>  
+            </div>
+            <img id="light" src="images/LightOrange.png">
+            <div id="lets_scroll">
+                <p>Листайте вниз</p>
+                <img src="images/arrow.png">
+            </div>
+        </div>
+        <h1 class="main_label">
+            Всегда ли цели терапии СД2 на поверхности?
+        </h1>
+
+    </div>
+    <div class="screen" id="screen2">
+        <div id="screen2Sub">
+            <h1 class = "mainLabelScr2">Основа терапии — патогенез СД2</h1>
+        </div>         
+    </div>    
+    <div class="screen" id="screen3">
+       <div class="subscreen">
+           <h2>Звенья патогенеза СД2</h2>
+           <img id="info_subscreen_1" src="images/tab1.png">
+       </div>  
+       <div class="subscreen">
+           <h2>Смертельный октет</h2>
+           <img id="info_subscreen_2" src="images/tab_2.png">
+       </div> 
+       <div class="subscreen">
+           <h2>Звенья патогенеза СД2</h2>
+           <img id="info_subscreen_3" src="images/tab_3.png">
+       </div>
+       <div id="scrollbar">
+           <div id="sausages">
+               <svg xmlns="http://www.w3.org/2000/svg">
+                   <rect height="100%" width="100%" fill="#d1eaff"/>  
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg">
+                   <rect height="100%" width="100%" fill="#d1eaff" opacity="0.3"/>
+               </svg>
+               <img id="shield" src="images/shield.png" />
+           </div>
+           <div id="legend">
+               <p class="year">1988</p>
+               <p class="year">2009</p>
+               <p class="year">2016</p>
+           </div>
+       </div>       
+    </div>
+    </div> 
+<script src="script.js"></script>  
+</body>
+</html>
